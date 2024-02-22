@@ -1,0 +1,18 @@
+.hard{
+    color: red;
+}
+
+.soft{
+    color: cyan;
+}
+
+.menu{
+    font-style: italic;
+    text-align: right;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-size: 120%;
+}
