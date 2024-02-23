@@ -1,18 +1,42 @@
+body{
+    width: 90vw;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+}
+
+main{
+    background-color: black;
+    padding: 20px;
+}
+
 .hard{
     color: red;
 }
 
 .soft{
     color: cyan;
+    list-style: none;
+    font-style: italic;
+    text-align: left;
+}
+
+.bolas li{
+    display: inline;
+    cursor: pointer;
+    padding: 30px;
+}
+
+header{
+
 }
 
 .menu{
     font-style: italic;
     text-align: right;
+    background-color: darkgray; width: 100%;
 }
-
-body{
-    background-color: black;
-    color: white;
-    font-size: 120%;
+    
+a{
+     color: yellow;
 }

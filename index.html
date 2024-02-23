@@ -14,35 +14,40 @@ Exercício 2: Crie um arquivo em estilo CSS externo e vincule à sua página. Cr
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-
-        h1, h2{
+        
+        h1, h2 h3{
             font-family: Arial, sans-serif;
         }
 
         </style>
-
+        
+        <title>Ramon Coelho Melo</title>
+    </head>
+    
+    <body>
         <header>
-            <div class="menu">
+            <div>
                 <nav>
-                    <a href="contratado.html">Me contrate aqui</a>
-                </nav>
-            </div>
+                    <ul>
+                        <li class="bolas">
+                            <a href="">LinkedIn</a>
+                            <a href="">GitHub</a>
+                            <a href="contratado.html">Me contrate aqui</a>
+                        </li>
+                </ul>
+            </nav>
+        </div>
         </header>
-
-    <title>Ramon Coelho Melo</title>
-</head>
-
-<body>
-
-    <main>
-
-        <h1 style="text-align: center;">Currículo</h1>
+        
+        <main>
+            
+        <h2 style="text-align: center;">Currículo</h2>
         
         <h2>Sobre mim e contato</h2>
     
@@ -50,17 +55,20 @@ Exercício 2: Crie um arquivo em estilo CSS externo e vincule à sua página. Cr
         <p>Endereço: Rua Sebastião Pinto Cabral, 34B. CEP: 08110-830.</p>
         <p>Podem me contatar através de:</p>
         <ul>
-            <li>Email: ramon.coelhomelo@outlook.com</li>
-            <li>Telefone: (11)94984-7736</li>
+            <li>Email: <a href="mailto">ramon.coelhomelo@outlook.com</a></li>
+            <li>Telefone: <a href="tel:+5511949847736">(11)94984-7736</a></li>
+            <li><a href="https://wa.me/+5511949847736">Whatsapp</a></li>
         </ul>
 
-        <h2>Formação Acadêmica</h2>
+        <h3>Formação Acadêmica</h3>
         <p>Ensino médio completo</p>
+        <p></p>
+        <p>Programação front-end SENAI Conde Jose Vicente de Azevedo - jul/2024 - 420h</p>
 
-        <h2>Experiência profissional</h2>
+        <h3>Experiência profissional</h3>
         <p>Não tenho nenhuma experiência e estou em busca de meu primeiro emprego como jovem aprendiz, com objetivo de aprender, poder ajudar e ser ajudado; visando acima de tudo uma equipe que eu possa contar. </p>
 
-        <h2 class="hard">Hard Skills</h2>
+        <h3 class="hard">Hard Skills</h3>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -68,11 +76,25 @@ Exercício 2: Crie um arquivo em estilo CSS externo e vincule à sua página. Cr
             <li>Visual Studio Code</li>
         </ul>
 
-        <h2 class="soft">Soft skills</h2>
+        <h3 class="soft">Soft skills</h3>
         <p>Trabalho em equipe, organização de tarefas, pontualidade, comunicação, proatividade e autoconfiança. </p>
 
-        <h2>Idiomas</h2>
-        <p>Inglês Intermediário</p>
+        <table>
+            <tr>
+                <th>Idioma</th>
+                <th>Nível</tr>
+            </tr>
+
+            <tr>
+                <td>Português (BR)</td>
+                <td>Nativo</td>
+            </tr>
+
+            <tr>
+                <td>Inglês</td>
+                <td>Intermediário (B1)</td>
+            </tr>
+        </table>
 
 
     </main>
