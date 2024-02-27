@@ -1,36 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
+
 body{
+    width: 80vw;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
     background-color: black;
     color: aliceblue;
-    position: relative;
+}
+.nome-curriculo{
+    font-family: "Anta", sans-serif;
+    font-size: 3rem;
+    margin: auto;
 }
 
-header{
-    padding: 2px 3%;
-    text-align: center;
-    position: sticky;
-    top: 0px;
-    background-color: teal;
+section{
+    padding: 40px;
 }
 
-main{
-    margin: 0 180px;
-    
-}
-
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
-}
-
-h1, h2, h3{
-    text-align: center;
+.titulo-seco{
+    text-transform: uppercase;
+    font-family: "Anta", sans-serif;
+    color: crimson;
 }
 
 .hard{
-    color: red;
+    color: orange
 }
 
 .soft{
