@@ -20,6 +20,10 @@ section{
     padding: 40px;
 }
 
+.escola{
+    margin-bottom: 20px;
+}
+
 .titulo-seco{
     text-transform: uppercase;
     font-family: "Anta", sans-serif;
