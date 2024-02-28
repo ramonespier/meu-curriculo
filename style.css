@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
 
 body{
     width: 80vw;
     margin: auto;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-weight: 200;
     background-color: black;
     color: aliceblue;
@@ -16,12 +16,33 @@ header{
     margin: 0;
     position: fixed;
 }
-
-a{
-    padding: 2rem;
+.telefone{
+    padding: 6px;
+    color: lime;
 }
 
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 1.5;
+    margin:  1rem 0;
+    text-shadow: 1px 1px 1px white;
+}
 
+li{
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px white;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px white;
+}
+
+.contato{
+    margin-top: 50px;
+}
 
 .social{
     margin: 10px;
@@ -32,7 +53,7 @@ a{
 .nome-curriculo{
     font-family: "Anta", sans-serif;
     font-size: 3rem;
-    margin:auto ;
+    margin:auto;
 }
 
 .sobre-mim{
@@ -44,7 +65,7 @@ section{
 }
 
 .escola{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .titulo-seco{
@@ -54,14 +75,23 @@ section{
     font-size: 2rem;
     margin: 1rem;
     padding: 1rem;
+    text-shadow: 1px 1px 1px yellow;
 }
 
 .hard{
     color: orange;
     font-family: "Anta", sans-serif;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px red;
 }
 
 .soft{
     color: aqua;
     font-family: "Anta", sans-serif;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px cornflowerblue;
 }
