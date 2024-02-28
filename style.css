@@ -10,10 +10,33 @@ body{
     background-color: black;
     color: aliceblue;
 }
+
+header{
+    background-image: linear-gradient(to bottom right, #000000, #DC143C);
+    margin: 0;
+    position: fixed;
+}
+
+a{
+    padding: 2rem;
+}
+
+
+
+.social{
+    margin: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
 .nome-curriculo{
     font-family: "Anta", sans-serif;
     font-size: 3rem;
-    margin: auto;
+    margin:auto ;
+}
+
+.sobre-mim{
+    margin-bottom: 20px;
 }
 
 section{
@@ -28,12 +51,17 @@ section{
     text-transform: uppercase;
     font-family: "Anta", sans-serif;
     color: crimson;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .hard{
-    color: orange
+    color: orange;
+    font-family: "Anta", sans-serif;
 }
 
 .soft{
     color: aqua;
+    font-family: "Anta", sans-serif;
 }

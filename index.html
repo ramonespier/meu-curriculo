@@ -20,36 +20,41 @@ Exercício 2: Crie um arquivo em estilo CSS externo e vincule à sua página. Cr
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style>
-        
-            h1, h2 h3{
-                font-family: Arial, sans-serif;
-           }
-
-        </style>
-        
         <title>Meu currículo</title>
 
     </head>
     
 <body>
+
     <header>
         <h1 id="nome-curriculo">Ramon Coelho Melo</h1>
+        
+        <div class="corte">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" class="social">Linkedin</a>
+                        <a href="" class="social">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
         
     <section id="apresentacao">
             
         <h2 class="titulo-seco">Apresentação</h2>
-        <h2>Sobre mim e contato</h2>
+        <h2 class="sobre-mim">Sobre mim e contato</h2>
     
-        <p>Me chamo Ramon Coelho Melo, tenho 18 anos, gosto de me adaptar em ambientes cooperativos, namoro e moro em São Paulo, Itaim Paulista, zona leste.</p>
+        <p>Me chamo Ramon Coelho Melo, tenho 18 anos, namoro e moro em São Paulo, Itaim Paulista, zona leste.</p>
         <p>Endereço: Rua Sebastião Pinto Cabral, 34B. CEP: 08110-830.</p>
         <h3>Podem me contatar através de:</h3>
 
         <ul>
-            <li>Email: <a href="mailto">ramon.coelhomelo@outlook.com</a></li>
-            <li>Telefone: <a href="tel:+5511949847736">(11)94984-7736</a></li>
-            <li><a href="https://wa.me/+5511949847736">Whatsapp</a></li>
+            <li>Email: <a class="contato" href="mailto">ramon.coelhomelo@outlook.com</a></li>
+            <li>Telefone: <a class="contato" href="tel:+5511949847736">(11)94984-7736</a></li>
+            <li><a class="contato" href="https://wa.me/+5511949847736">Whatsapp</a></li>
         </ul>
 
         </section>
