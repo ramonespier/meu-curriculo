@@ -1,9 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
 
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 0.3rem;
+}
+
+button{
+    background-color: #610000;
+    color: aliceblue;
+    padding: 7px;
+    text-align: center;
+    border-radius: 32px;
+    transition: .3s;
+}
+
+button :hover{
+    background-color: #610000;
+    color: aliceblue;
+}
+
 body{
-    width: 80vw;
-    margin: auto;
+    margin: 0 auto;
     font-size: 20px;
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
@@ -12,10 +43,32 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom right, #000000, #DC143C);
-    margin: 0;
+    background-image: linear-gradient(to bottom right, crimson, black);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
     position: fixed;
+    width: 100%;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    background-color: 0 ,0, 0, 0, 1;
 }
+
+header a :hover{
+    transform: scale(1.1);
+}
+
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+
+}
+
 .telefone{
     padding: 6px;
     color: lime;
@@ -23,7 +76,9 @@ header{
 
 a{
     text-decoration: none;
+    font-size: 17px;
 }
+
 p{
     line-height: 1.5;
     margin:  1rem 0;
@@ -40,14 +95,11 @@ h3{
     text-shadow: 1px 1px 1px white;
 }
 
-.contato{
-    margin-top: 50px;
-}
-
 .social{
-    margin: 10px;
+    margin: 18px;
     text-decoration: none;
     color: aliceblue;
+    text-align: left;
 }
 
 .nome-curriculo{
@@ -61,7 +113,7 @@ h3{
 }
 
 section{
-    padding: 40px;
+    padding: 30px;
 }
 
 .escola{
