@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar-track{
     background-color: #000000;
     border-radius: 10px;
@@ -146,4 +151,60 @@ section{
     margin: 1rem;
     padding: 1rem;
     text-shadow: 1px 1px 1px cornflowerblue;
+}
+
+#articulacoes{
+    width: 30%;
+    background-color: darkorchid;
+    padding: 2rem;
+}
+
+#articulacoes p, h1, h2{
+    font-family: "DM Sans", sans-serif;
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.autor{
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+.data{
+    font-style: oblique;
+    font-size: 80%;
+}
+
+.continue-lendo{
+    background-color: crimson;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.continue-lendo a{
+    text-decoration: none;
+}
+
+.first{
+    text-shadow: none;
+}
+
+
+article p{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+article h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+article h2{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
