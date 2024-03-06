@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap');
 
 *{
     scroll-behavior: smooth;
@@ -23,6 +24,18 @@
 ::-webkit-scrollbar{
     width: 0.3rem;
 }
+
+#apresentacao,
+#formacao-academica,
+#experiencia-profissional,
+#hard-skills,
+#soft-skills,
+#idiomas{
+    width: 80vw;
+    margin: auto;
+    padding: 40px;
+}
+
 
 button{
     background-color: #610000;
@@ -49,15 +62,10 @@ body{
 
 header{
     background-image: linear-gradient(to bottom right, crimson, black);
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex;
     align-items: center;
-    position: fixed;
-    width: 100%;
     padding: 10px;
-    backdrop-filter: blur(10px);
-    background-color: 0 ,0, 0, 0, 1;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 header a :hover{
@@ -81,44 +89,37 @@ header nav ul li{
 
 a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 p{
     line-height: 1.5;
-    margin:  1rem 0;
-    text-shadow: 1px 1px 1px white;
+    margin:  1rem 0; 
 }
 
 li{
     line-height: 1.5;
-    text-shadow: 1px 1px 1px white;
 }
 
 h3{
     font-size: 1.5rem;
-    text-shadow: 1px 1px 1px white;
 }
 
 .social{
-    margin: 18px;
+    padding: 10px;
     text-decoration: none;
     color: aliceblue;
     text-align: left;
 }
 
-.nome-curriculo{
-    font-family: "Anta", sans-serif;
-    font-size: 3rem;
+#nome-curriculo{
+    font-family: "Orbitron";
+    font-size: 1rem;
     margin:auto;
 }
 
 .sobre-mim{
     margin-bottom: 20px;
-}
-
-section{
-    padding: 30px;
 }
 
 .escola{
@@ -191,6 +192,7 @@ section{
 
 .first{
     text-shadow: none;
+
 }
 
 
@@ -209,7 +211,17 @@ article h2{
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 main{
     display: flex;
     justify-content: space-evenly;
+}
+
+.lista-tags li{
+    display: inline-block;
+    background-color: dimgrey;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0;
+    
 }
