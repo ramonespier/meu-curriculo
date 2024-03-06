@@ -155,9 +155,11 @@ h3{
 }
 
 #articulacoes{
-    width: 30%;
     background-image: linear-gradient(to bottom right,  dimgrey, black);
-    padding: 2rem;
+    padding: .7rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #articulacoes p, h1, h2{
@@ -192,13 +194,13 @@ h3{
 
 .first{
     text-shadow: none;
-
 }
-
 
 article p{
     text-align: justify;
     margin-bottom: 1rem;
+    height: 130px;
+    overflow: hidden;
 }
 
 article h1{
