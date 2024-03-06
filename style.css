@@ -71,7 +71,7 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
-
+    
 }
 
 .telefone{
@@ -155,7 +155,7 @@ section{
 
 #articulacoes{
     width: 30%;
-    background-color: darkorchid;
+    background-image: linear-gradient(to bottom right,  dimgrey, black);
     padding: 2rem;
 }
 
@@ -202,9 +202,14 @@ article p{
 article h1{
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 article h2{
     font-size: 1.5rem;
     font-weight: 600;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
 }
