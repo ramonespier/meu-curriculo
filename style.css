@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap');
 
 *{
@@ -9,15 +8,42 @@
 :root{
     font-size: 16px;
     scroll-behavior: smooth;
+    --padding-padrao-secao: 40px;
+}
+
+[data-tema="dark"]{
+    --planofundo: #353535;
+    --cor-primaria-texto: aliceblue;
+    --cor-fundo-tags: dimgray;
+    --cor-botao: maroon;
+    --degrade: linear-gradient(to bottom right, crimson, #353535);
+    --fundo-scrollbar-track: #353535;
+    --fundo-scrollbar-thumb: crimson;
+    --titulo: crimson;
+    --shadow-text: yellow;
+}
+
+[data-tema="light"] {
+    --planofundo: aliceblue;
+    --cor-primaria-texto: #353535;
+    --cor-fundo-tags: gray;
+    --cor-botao: #b3c0ff;
+    --degrade: linear-gradient(to bottom right, #3d85c6, 
+    #c4daed);
+    --fundo-scrollbar-thumb: #3d85c6;
+    --fundo-scrollbar-track: #c4daed;
+    --titulo:  #3d85c6;
+    --shadow-text: green;
+
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #000000;
+    background-color: var(--fundo-scrollbar-track);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: crimson;
+    background-color: var(--fundo-scrollbar-thumb);
     border-radius: 10px;
 }
 
@@ -33,22 +59,26 @@
 #idiomas{
     width: 80vw;
     margin: auto;
-    padding: 40px;
+    padding: var(--padding-padrao-secao)
+}
+
+#btTrocaTema{
+    width: 5%;
 }
 
 
 button{
-    background-color: #610000;
-    color: aliceblue;
+    background-color: var(--cor-botao);
+    color: var(--cor-primaria-texto);
     padding: 7px;
     text-align: center;
     border-radius: 32px;
     transition: .3s;
 }
 
-button :hover{
-    background-color: #610000;
-    color: aliceblue;
+button #btTrocaTema :hover{
+    background-color: var(--cor-botao);
+    color: var(--cor-primaria-texto);
 }
 
 body{
@@ -56,16 +86,18 @@ body{
     font-size: 20px;
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--planofundo);
+    color: var(--cor-fundo-tags)
 }
 
 header{
-    background-image: linear-gradient(to bottom right, crimson, black);
+    background-image: var(--degrade);
     align-items: center;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+    position: fixed;
 }
 
 header a :hover{
@@ -79,7 +111,6 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
-    
 }
 
 .telefone{
@@ -95,14 +126,21 @@ a{
 p{
     line-height: 1.5;
     margin:  1rem 0; 
+    color: var(--cor-primaria-texto);
 }
 
 li{
     line-height: 1.5;
+    color: var(--cor-primaria-texto);
+}
+
+h2{
+    color: var(--cor-primaria-texto);
 }
 
 h3{
     font-size: 1.5rem;
+    color: var(--cor-primaria-texto);
 }
 
 .social{
@@ -116,6 +154,7 @@ h3{
     font-family: "Orbitron";
     font-size: 1rem;
     margin:auto;
+    color: var(--cor-primaria-texto);
 }
 
 .sobre-mim{
@@ -128,17 +167,17 @@ h3{
 
 .titulo-seco{
     text-transform: uppercase;
-    font-family: "Anta", sans-serif;
-    color: crimson;
+    font-family: "Orbitron";
+    color: var(--titulo);
     font-size: 2rem;
     margin: 1rem;
     padding: 1rem;
-    text-shadow: 1px 1px 1px yellow;
+    text-shadow: 1px 1px 1px var(--shadow-text);
 }
 
 .hard{
     color: orange;
-    font-family: "Anta", sans-serif;
+    font-family: "Orbitron";
     font-size: 2rem;
     margin: 1rem;
     padding: 1rem;
@@ -162,13 +201,6 @@ h3{
     justify-content: space-between;
 }
 
-#articulacoes p, h1, h2{
-    font-family: "DM Sans", sans-serif;
-    text-align: justify;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .autor{
     font-style: oblique;
     font-weight: 600;
@@ -181,7 +213,7 @@ h3{
 }
 
 .continue-lendo{
-    background-color: crimson;
+    background-color: var(--cor-primaria-texto);
     padding: .5rem 1rem;
     margin-top: 1rem;
     border-radius: 8px;
@@ -202,6 +234,12 @@ article p{
     height: 130px;
     overflow: hidden;
 }
+
+#articulacoes p, h1, h2{
+    font-family: "DM Sans", sans-serif;
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;}
 
 article h1{
     font-size: 2rem;
